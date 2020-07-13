@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="MobileGiro" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2692" sap2010:WorkflowViewState.IdRef="MobileGiro_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uma="clr-namespace:UiPath.MobileAutomation.Activities;assembly=UiPath.MobileAutomation.Activities" xmlns:umm="clr-namespace:UiPath.MobileAutomation.Models;assembly=UiPath.MobileAutomation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="MobileGiro" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2567.2" sap2010:WorkflowViewState.IdRef="MobileGiro_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uma="clr-namespace:UiPath.MobileAutomation.Activities;assembly=UiPath.MobileAutomation.Activities" xmlns:umm="clr-namespace:UiPath.MobileAutomation.Models;assembly=UiPath.MobileAutomation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MobileGiro" sap:VirtualizedContainerService.HintSize="501.6,2527.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MobileGiro" sap:VirtualizedContainerService.HintSize="501.6,2402.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="김현림" Name="str_이름" />
       <Variable x:TypeArguments="x:String" Default="19941019" Name="str_생년월일" />
@@ -59,7 +59,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uma:MobileDeviceConnection StartPage="{x:Null}" AppiumUrl="http://localhost:4723/wd/hub" DisplayName="Mobile Device Connection - Mobile Giro" sap:VirtualizedContainerService.HintSize="460,2434.4" sap2010:WorkflowViewState.IdRef="MobileDeviceConnection_2">
+    <uma:MobileDeviceConnection StartPage="{x:Null}" AppiumUrl="http://localhost:4723/wd/hub" DisplayName="Mobile Device Connection - Mobile Giro" sap:VirtualizedContainerService.HintSize="460,2309.6" sap2010:WorkflowViewState.IdRef="MobileDeviceConnection_2">
       <uma:MobileDeviceConnection.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="platformName">Android</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="platformVersion">10</InArgument>
@@ -71,7 +71,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="UiPathScopeContext" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="426.4,2329.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap:VirtualizedContainerService.HintSize="426.4,2204.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,13 +140,6 @@
                   <umm:Target FullSelector="&lt;mbl android:className='android.widget.Button' id='kr.or.giro.android:id/btn_confirm' /&gt;&#xA;" ImageBase64="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" />
                 </uma:Tap.Target>
               </uma:Tap>
-            </Sequence>
-            <Sequence sap:VirtualizedContainerService.HintSize="384.8,84.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
             </Sequence>
           </Sequence>
         </ActivityAction>
