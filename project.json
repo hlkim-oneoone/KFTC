@@ -1,0 +1,41 @@
+{
+  "name": "hlkim_금융결제원",
+  "description": "빈 프로세스",
+  "main": "Mobile\\hlkim_PayInfo.xaml",
+  "dependencies": {
+    "Appium.WebDriver": "[4.1.1]",
+    "ShansLabSMS.Activities": "[1.0.5]",
+    "UiPath.Excel.Activities": "[2.9.0-preview]",
+    "UiPath.Mail.Activities": "[1.9.0-preview]",
+    "UiPath.MobileAutomation.Activities": "[20.6.0-preview]",
+    "UiPath.System.Activities": "[20.6.1-preview]",
+    "UiPath.Testing.Activities": "[1.1.1-preview]",
+    "UiPath.UIAutomation.Activities": "[20.6.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.6.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": []
+  },
+  "expressionLanguage": "VisualBasic"
+}
