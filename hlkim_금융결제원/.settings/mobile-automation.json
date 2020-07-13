@@ -1,0 +1,81 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "Galaxy A50",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "10",
+      "DeviceName": "Galaxy A50",
+      "Capabilities": {}
+    },
+    {
+      "Name": "Galaxy S8+",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "9",
+      "DeviceName": "Galaxy S8+",
+      "Capabilities": {}
+    }
+  ],
+  "Applications": [
+    {
+      "Name": "hlkim_PayInfo",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "http://172.30.1.8/payinfo.apk"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "Name": "hlkim_EmartMall",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "http://172.30.1.8/EmartMall.apk"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "Name": "hlkim_MobileGiro",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "http://172.30.1.8/MobileGiro.apk"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "Name": "hlkim_BankPay",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "http://172.30.1.8/BankPay.apk"
+          },
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "Variables": {}
+}
