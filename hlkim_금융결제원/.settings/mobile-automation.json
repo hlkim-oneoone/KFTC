@@ -23,32 +23,6 @@
   ],
   "Applications": [
     {
-      "Name": "hlkim_PayInfo",
-      "Description": null,
-      "Type": "App",
-      "Platforms": {
-        "Android": {
-          "Capabilities": {
-            "app": "http://172.30.1.8/payinfo.apk"
-          },
-          "StartPage": null
-        }
-      }
-    },
-    {
-      "Name": "hlkim_EmartMall",
-      "Description": null,
-      "Type": "App",
-      "Platforms": {
-        "Android": {
-          "Capabilities": {
-            "app": "http://172.30.1.8/EmartMall.apk"
-          },
-          "StartPage": null
-        }
-      }
-    },
-    {
       "Name": "hlkim_MobileGiro",
       "Description": null,
       "Type": "App",
@@ -56,19 +30,6 @@
         "Android": {
           "Capabilities": {
             "app": "http://172.30.1.8/MobileGiro.apk"
-          },
-          "StartPage": null
-        }
-      }
-    },
-    {
-      "Name": "hlkim_BankPay",
-      "Description": null,
-      "Type": "App",
-      "Platforms": {
-        "Android": {
-          "Capabilities": {
-            "app": "http://172.30.1.8/BankPay.apk"
           },
           "StartPage": null
         }
