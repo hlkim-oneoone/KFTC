@@ -255,7 +255,7 @@
                                 <av:PointCollection x:Key="ConnectorLocation">320,728 420,728 420,574.4</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap2010:Annotation.AnnotationText="주민번호 등록이 안되어 있으면 등록을 먼저 하고 지방세 조회로 감&#xA;" DisplayName="02.주민번호 - 등록" sap:VirtualizedContainerService.HintSize="616,2713.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <Sequence sap2010:Annotation.AnnotationText="주민번호 등록이 안되어 있으면 등록을 먼저 하고 지방세 조회로 감&#xA;" DisplayName="02.주민번호 - 등록" sap:VirtualizedContainerService.HintSize="616,2643.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="s:Char[]" Name="arr_주민번호" />
                                 <Variable x:TypeArguments="x:String" Default="9410192056520" Name="str_주민번호" />
@@ -285,19 +285,19 @@
                                   <InArgument x:TypeArguments="s:Char[]">[str_주민번호.ToArray]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each - 주민번호 키패드" sap:VirtualizedContainerService.HintSize="574.4,796" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[arr_주민번호]">
+                              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each - 주민번호 키패드" sap:VirtualizedContainerService.HintSize="574.4,576.8" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[arr_주민번호]">
                                 <ui:ForEach.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="539.2,661.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="539.2,442.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[item.ToString]" sap:VirtualizedContainerService.HintSize="497.6,568.8" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+                                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[item.ToString]" sap:VirtualizedContainerService.HintSize="497.6,349.6" sap2010:WorkflowViewState.IdRef="Switch`1_7">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -365,6 +365,15 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ForEach>
+                              <ui:AnchorBase AnchorProvider="{x:Null}" AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="574.4,108.8">
+                                <ui:AnchorBase.Action>
+                                  <ActivityAction x:TypeArguments="ui:Anchor">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                                    </ActivityAction.Argument>
+                                  </ActivityAction>
+                                </ui:AnchorBase.Action>
+                              </ui:AnchorBase>
                               <uma:Tap DelayAfter="0" DelayBefore="0" DisplayName="Tap - 다음" sap:VirtualizedContainerService.HintSize="574.4,172.8" sap2010:WorkflowViewState.IdRef="Tap_96" RequiresInitialization="False" TapType="Single">
                                 <uma:Tap.Target>
                                   <umm:Target FullSelector="&lt;mbl android:className='android.widget.Button' id='kr.or.giro.android:id/btn_next' /&gt;&#xA;" ImageBase64="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" />

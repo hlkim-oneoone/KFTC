@@ -18,7 +18,9 @@
       "PlatformName": "Android",
       "PlatformVersion": "9",
       "DeviceName": "Galaxy S8+",
-      "Capabilities": {}
+      "Capabilities": {
+        "enforceAppInstall": "FALSE"
+      }
     }
   ],
   "Applications": [
@@ -29,6 +31,8 @@
       "Platforms": {
         "Android": {
           "Capabilities": {
+            "autoGrantPermissions": "TRUE",
+            "enforceAppInstall": "FALSE",
             "app": "http://172.30.1.8/MobileGiro.apk"
           },
           "StartPage": null
